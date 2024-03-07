@@ -14,15 +14,15 @@ export default class Currency {
     return this._code;
   }
 
-  set setName(name) {
+  set setName(newName) {
     if (typeof name === 'string') {
-      this._name = name;
+      this._name = newName;
     }
   }
 
-  set setCode(code) {
+  set setCode(newCode) {
     if (typeof code === 'string') {
-      this._code = code;
+      this._code = newCode;
     }
   }
 
