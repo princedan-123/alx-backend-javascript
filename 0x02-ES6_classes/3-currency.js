@@ -6,22 +6,22 @@ export default class Currency {
     }
   }
 
-  get getName() {
+  get name() {
     return this._name;
   }
 
-  get getCode() {
+  get code() {
     return this._code;
   }
 
-  set setName(newName) {
-    if (typeof name === 'string') {
+  set name(newName) {
+    if (typeof newName === 'string') {
       this._name = newName;
     }
   }
 
-  set setCode(newCode) {
-    if (typeof code === 'string') {
+  set code(newCode) {
+    if (typeof newCode === 'string') {
       this._code = newCode;
     }
   }
