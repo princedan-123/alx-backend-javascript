@@ -37,11 +37,13 @@ export default class HolbertonCourse {
     }
   }
 
-  set length(newlength) {
-    if (!(typeof newLength === 'number')) {
+  set length(newLength) {
+    if (typeof newLength === 'number') {
+      this._length = newLength;
+    }
+    else {
       throw new TypeError('Length must be a number');
     }
-    this._length = newLength;
   }
 
   set students(newStudents) {
