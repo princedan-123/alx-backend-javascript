@@ -1,4 +1,7 @@
 function cleanSet(set, startString) {
+  if (!(set instanceof Set && typeof startString === 'string')) {
+    return '';
+  }
   const { length } = startString;
   const array = [];
   let newString = '';
