@@ -5,7 +5,7 @@ function cleanSet(set, startString) {
   if (length > 0) {
     for (const item of set) {
       if (item.startsWith(startString)) {
-        const newString = item.slice(length, -1);
+        const newString = item.slice(length);
         array.push(newString);
       }
     }
