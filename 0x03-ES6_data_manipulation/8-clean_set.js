@@ -5,8 +5,8 @@ function cleanSet(set, startString) {
   if (length > 0) {
     for (const item of set) {
       if (item.startsWith(startString)) {
-        const newString = item.slice(length);
-        array.push(newString);
+        const subString = item.slice(length);
+        array.push(subString);
       }
     }
     newString = array.join('-');
