@@ -8,5 +8,13 @@ interface Teacher {
   [key:string]: any;
   }
 interface Directors extends Teacher {
-    numberOfReports: number;
+  numberOfReports: number;
+  }
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+  }
+
+  const printTeacher:printTeacherFunction = function(firstName, lastName) {
+    const firstLetter = firstName.slice(0,1);
+    return `${firstLetter}. ${lastName}`
   }
