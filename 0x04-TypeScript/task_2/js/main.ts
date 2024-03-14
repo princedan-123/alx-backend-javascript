@@ -55,9 +55,9 @@ function isDirector(employee: Director | Teacher): employee is Director {
 
 function executeWork(employee: Director | Teacher):string {
   if(employee instanceof Director) {
-    return workDirectorTasks();
+    return employee.workDirectorTasks();
     }
-  else(employee instanceof Teacher) {
-    return workTeacherTasks()
+  else if(employee instanceof Teacher) {
+    return employee.workTeacherTasks()
   }
 }
