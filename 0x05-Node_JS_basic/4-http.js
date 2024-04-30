@@ -1,5 +1,3 @@
-/* A script that creates a simple HTTP server */
-
 const http = require('http');
 
 const app = http.createServer((request, response) => {
