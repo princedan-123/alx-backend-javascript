@@ -5,6 +5,6 @@ const app = http.createServer((request, response) => {
   response.setHeader('Content-Type', 'text/plain');
   response.end('Hello Holberton School!');
 });
-app.listen(1245, console.log('...'));
+app.listen(1245, () => { console.log('...') });
 
 module.exports = app;

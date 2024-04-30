@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function countStudents(path) {
+function countStudents (path) {
   if (!path) {
     throw new Error('Cannot load the database');
   }
