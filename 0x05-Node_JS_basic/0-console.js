@@ -1,4 +1,4 @@
 function displayMessage(stringParameter) {
-  process.stdout.write(`${stringParameter}\n`);
+  console.log(stringParameter);
 }
 module.exports = displayMessage;
