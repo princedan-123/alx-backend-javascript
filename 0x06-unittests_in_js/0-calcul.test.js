@@ -14,4 +14,7 @@ describe('testing the sum of two rounded numbers', () => {
 	it('testing the sum of another float', () => {
 		assert.equal(calculateNumber(1.5, 3.7), 6);
 	})
+	it('testing for non-roundable negative numbers', () => {
+		assert.equal(calculateNumber(-1.2, -3.4), -4);
+	})
 })
