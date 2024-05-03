@@ -16,10 +16,10 @@ describe('testing the sum of two numbers', () => {
 		expect(calculateNumber('SUM', 1.2, 3.7)).to.equal(5);
 	})
 	it('testing the sum of another float', () => {
-		expect(calculateNumber('SUM', 1.5, 3.7)).to.equal(6);
+		expect(calculateNumber('SUM', -1.5, -3)).to.equal(-4);
 	})
 	it('testing for non-roundable negative numbers', () => {
-		expect(calculateNumber('SUM', -1.2, -3.4)).to.equal(-4);
+		expect(calculateNumber('SUM', -1, -3.5)).to.equal(-4);
 	})
 })
 describe('testing the division of two numbers', () => {
