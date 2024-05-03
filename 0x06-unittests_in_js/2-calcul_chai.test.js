@@ -9,6 +9,9 @@ describe('testing the sum of two numbers', () => {
 	it('testing the sum of an whole number and a float', () => {
 		expect(calculateNumber('SUM', 1, 3.7)).to.equal(5);
 	})
+	it('testing the sum of the first roundable number', () => {
+		expect(calculateNumber('SUM', 2.5, 3.2)).to.equal(6)
+	})
 	it('testing the sum of two floats', () => {
 		expect(calculateNumber('SUM', 1.2, 3.7)).to.equal(5);
 	})
