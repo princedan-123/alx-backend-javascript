@@ -20,4 +20,7 @@ describe('testing the sum of two rounded numbers', () => {
 	it('testing for second roundable number', () => {
 		assert.equal(calculateNumber(2.5, 4.5), 8);
 	})
+	it('testing for second non-roundable number', () => {
+		assert.equal(calculateNumber(1.3, 5.2), 6);
+	})
 })
