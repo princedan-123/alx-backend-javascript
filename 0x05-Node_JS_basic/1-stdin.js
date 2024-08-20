@@ -1,12 +1,8 @@
 console.log('Welcome to Holberton School, what is your name?');
 process.stdin.on('data', (input) => {
-  if (input !== null && process.stdin.isTTY === true) {
-    process.stdout.write(`Your name is: ${input}`);
-    process.exit(0);
+  process.stdout.write(`Your name is: ${input}`);
+  if (!process.stdin.isTTY) {
+    console.log('This important software is now closing');
   }
-  if (process.stdin.isTTY === false) {
-    process.stdout.write(`Your name is: ${input}`);
-    process.stdout.write('This important software is now closing');
-    process.exit(0);
-  }
+  process.exit(0);
 });
