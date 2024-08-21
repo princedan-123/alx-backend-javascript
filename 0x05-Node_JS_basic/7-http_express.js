@@ -6,10 +6,9 @@ function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
       if (data) {
-        let content = '';
+        const content = data;
         const csField = [];
         const sweField = [];
-        content = fs.readFileSync(path, 'utf8');
         const totalStudent = content.split('\n');
         totalStudent.shift();
         const studentNumber = `Number of students: ${totalStudent.length}`;
