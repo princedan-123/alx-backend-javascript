@@ -1,7 +1,7 @@
 const calculateNumber = require('./1-calcul.js');
 const { expect } = require('chai');
 
-describe('Testing the addition of rounded numbers', () => {
+describe('test suite for type SUM', () => {
   it('testing the addition of 2 and 2', () => {
     expect(calculateNumber('SUM', 2, 2)).to.equal(4);
   })
@@ -21,7 +21,7 @@ describe('Testing the addition of rounded numbers', () => {
     expect(calculateNumber('SUM', 4.5, 1)).to.equal(6);
   })
 })
-describe('testing subtraction of two rounded numbers', () => {
+describe('test suite for type SUBTRACT', () => {
   it('testing 1 and 3.7', () => {
     expect(calculateNumber('SUBTRACT', 1, 3.7)).to.equal(-3);
   })
@@ -41,7 +41,7 @@ describe('testing subtraction of two rounded numbers', () => {
     expect(calculateNumber('SUBTRACT', 5, 6)).to.equal(-1);
   })
 })
-describe('Testing the division of rounded numbers', () => {
+describe('test suite for type DIVIDE', () => {
   it('testing the addition of 2 and 2', () => {
     expect(calculateNumber('DIVIDE', 2, 2)).to.equal(1);
   })
