@@ -3,22 +3,22 @@ const { expect } = require('chai');
 
 describe('test suite for type SUM', () => {
   it('testing the addition of 2 and 2', () => {
-    expect(calculateNumber('SUM', 2, 2)).to.equal(4);
+    expect(calculateNumber(type='SUM', 2, 2)).to.equal(4);
   })
   it('testing the addition of 5 and 6', () => {
-    expect(calculateNumber('SUM', 5, 6)).to.not.equal(10);
+    expect(calculateNumber(type='SUM', 5, 6)).to.not.equal(10);
   })
   it('testing 1 and 3.7', () => {
-    expect(calculateNumber('SUM', 1, 3.7)).to.equal(5);
+    expect(calculateNumber(type='SUM', 1, 3.7)).to.equal(5);
   })
   it('testing 1.2, 3.7', () => {
-    expect(calculateNumber('SUM', 1.2, 3.7)).to.equal(5);
+    expect(calculateNumber(type='SUM', 1.2, 3.7)).to.equal(5);
   })
   it('testing 1.5, 3.7', () => {
-    expect(calculateNumber('SUM', 1.5, 3.7)).to.equal(6);
+    expect(calculateNumber(type='SUM', 1.5, 3.7)).to.equal(6);
   })
   it('testing 4.5 and 1', () => {
-    expect(calculateNumber('SUM', 4.5, 1)).to.equal(6);
+    expect(calculateNumber(type='SUM', 4.5, 1)).to.equal(6);
   })
 })
 describe('test suite for type SUBTRACT', () => {
