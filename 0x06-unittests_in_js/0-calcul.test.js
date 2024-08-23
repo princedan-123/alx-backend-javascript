@@ -23,4 +23,7 @@ describe('Testing the addition of rounded numbers', () => {
     it('testing 4.5 and 1', () => {
         assert.strictEqual(calculateNumber(4.5, 1), 6);
     })
+    it('testing 2 and 2.3', () => {
+        assert.strictEqual(calculateNumber(2, 2.3), 4);
+    })
 })
