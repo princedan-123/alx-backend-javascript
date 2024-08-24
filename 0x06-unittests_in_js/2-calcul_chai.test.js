@@ -1,7 +1,7 @@
 const calculateNumber = require('./1-calcul.js');
 const { expect } = require('chai');
 
-describe('type SUM', () => {
+describe('SUM', () => {
   it('testing the addition of 2 and 2', () => {
       expect(calculateNumber(type='SUM', 2, 2)).to.equal(4);
     })
@@ -21,7 +21,7 @@ describe('type SUM', () => {
     expect(calculateNumber('SUM', 4.5, 1)).to.equal(6);
   })
 })
-describe('type SUBTRACT', () => {
+describe('SUBTRACT', () => {
   it('testing 1 and 3.7', () => {
     expect(calculateNumber('SUBTRACT', 1, 3.7)).to.equal(-3);
   })
@@ -41,7 +41,7 @@ describe('type SUBTRACT', () => {
     expect(calculateNumber('SUBTRACT', 5, 6)).to.equal(-1);
   })
 })
-describe('type DIVIDE', () => {
+describe('DIVIDE', () => {
   it('testing the addition of 2 and 2', () => {
     expect(calculateNumber('DIVIDE', 2, 2)).to.equal(1);
   })
