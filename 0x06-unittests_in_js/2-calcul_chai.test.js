@@ -60,7 +60,12 @@ describe('type DIVIDE', () => {
   it('testing 4.5 and 1', () => {
     expect(calculateNumber('DIVIDE', 4.5, 1)).to.equal(5);
   })
+})
+describe('it should return Error when te second number is zero', () => {
   it('testing for zero division', () => {
     expect(calculateNumber('DIVIDE', 10, 0)).to.be.a('string').and.equal('Error');
+  })
+  it('testing for zero division', () => {
+    expect(calculateNumber('DIVIDE', 2, 0)).to.be.a('string').and.equal('Error');
   })
 })
