@@ -33,10 +33,16 @@ describe('Index page', () => {
       done();
     })
   })
-  it('testing the /login post route', (done) => {
-    request.post({url: 'http://localhost:7865/login', json: true, body: { "userName": "Betty" }}, (error, response, body) => {
+  it('testing the /login post route', (done) =>  {
+    const post = {
+      url: 'http://localhost:7865/login',
+      json: true,
+      body: { "userName": "Betty" }
+    }
+    request.post(post, (error, response, body) => {
       expect(response.statusCode).to.equal(200);
       expect(body).to.be.a('string');
+      expect(body).to.equal(`Welcome ${post.body.userName}`)
       done();
     })
   })
